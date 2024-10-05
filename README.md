@@ -6,7 +6,7 @@ The default image is `oneko.gif` in the same directory as the script. This can b
 
 # 📖 Lexicon
 
-The variable names in the script have been truncated (and, as a side effect, obfuscated) to reduce file size. If you would like to tweak the script to your liking, see the [LEXICON.md]() guide.
+The variable names in the script have been truncated (and, as a side effect, obfuscated) to reduce file size. If you would like to tweak the script to your liking, see the [LEXICON.md](https://github.com/ovnanova/smoloneko/blob/main/LEXICON.md) guide.
 
 ## 🏆 Contributing
 
