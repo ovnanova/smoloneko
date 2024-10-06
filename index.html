@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>smol oneko demo</title>
+    <title>smol oneko</title>
     <link rel="shortcut icon" href="favicon.ico">
     <style>
         body {
@@ -24,15 +24,39 @@
             padding: 2rem;
             border-radius: 15px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 80%;
+            width: 300px;
         }
 
         h1 {
             color: #df5e96;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
         }
 
         p {
             color: #6a1b9a;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 1.5rem;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
@@ -41,7 +65,7 @@
     <div class="container">
         <img src="favicon.ico" alt="oneko ready to pounce"></img>
         <h1>🌸 smol oneko 🌸</h1>
-        <p>move your mouse around to see oneko follow it!</p>
+        <p>move your mouse or finger around to see oneko follow it!</p>
         <p>oneko will perform idle animations if you keep your mouse still.</p>
         <a href="https://github.com/ovnanova/smoloneko" aria-label="GitHub">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" width="29" height="29" id="github">
@@ -52,6 +76,7 @@
           </a>
     </div>
     <script src="oneko.js"></script>
+    <script src="oneko_touch.js"></script>
 </body>
 <style>
     @font-face {
