@@ -1,4 +1,6 @@
-# 📖 Lexicon
+# 🐱 `oneko.js`
+
+## Variables
 
 - `e`: The main div element representing oneko
 - `s`: Object containing sprite positions for different states and directions
@@ -17,10 +19,10 @@
 - `S`: Speed of oneko's movement
 - `st`: Current state of oneko ("i", "a", or "c")
 - `af`: Frame counter for the alert state
-- `n`: Temporary variable for x-distance between oneko and cursor
-- `c`: Temporary variable for y-distance between oneko and cursor
+- `n`: Variable for x-distance between oneko and cursor
+- `c`: Variable for y-distance between oneko and cursor
 - `d`: Distance between oneko and cursor
-- `g`: Temporary variable for determining oneko's direction
+- `g`: Variable for determining oneko's direction
 - `l`: Function to handle idle animations
 - `u`: Main animation loop function
 
@@ -64,4 +66,20 @@
    - Left boundary (x == 16): left wall scratch
    - Top boundary (y == 16): top wall scratch
    - Right boundary (x == window width - 16): right wall scratch
-   - Bottom boundary (y == window height - 16): bottom wall scratch
+   - Bottom boundary (y == window height - 16): bottom wall scratch`
+
+# 👆 `oneko_touch.js`
+
+## Variables
+- `e`: Function to simulate mouse events from touch events
+
+## Functions
+- `e(e, t)`: Simulates a mouse move event from a touch event
+  - `e`: The original touch event
+  - `t`: The touch point (t.touches[0])
+
+## Behavior
+1. The script listens for 'touchmove' events only.
+2. Default behavior is prevented for all 'touchmove' events.
+3. Each 'touchmove' event is converted to a 'mousemove' event.
+4. The simulated 'mousemove' event uses event bubbling (bubbles:true) to ensure compatibility with the main oneko script.

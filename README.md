@@ -1,12 +1,23 @@
 # 🐱 smol oneko
 
-Want to add oneko.js to your site, but 6 KB is just too much? Now it's 1.8 KB!
+Want to add `oneko.js` to your site, but 5.41 KB is just too much? Now it's 1.65 KB!
 
-The default image is `oneko.gif` in the same directory as the script. This can be changed by adding `data-cat="yourimage.gif"` to your `<script>` tag.
+The default image is `oneko.gif` in the same directory as the script. This can be changed by modifying the `backgroundImage="url('oneko.gif')` variable in `oneko.js`.
+
+**You should not do this unless your image is formatted as a sprite sheet with the individual frames mapped in the same positions as `oneko.gif`.** Improperly formatted images will **not** display correctly, as the script makes assumptions about the GIF grid.
+
+*Optional: smol oneko also supports mobile via a helper script (minified to 229 bytes)! Add both `oneko.js` and `oneko_touch.js` to your directory with the corresponding `<script>` tags in your HTML.*
+
+**Implementation:**
+
+```html
+<script>src="oneko.js"></script>
+<script>src="oneko_touch.js"</script>
+```
 
 ## 📖 Lexicon
 
-The variable names in the script have been truncated (and, as a side effect, obfuscated) to reduce file size. If you would like to tweak the script to your liking, see the [LEXICON.md](https://github.com/ovnanova/smoloneko/blob/main/LEXICON.md) guide.
+The variable names in the scripts have been truncated (and, as a side effect, obfuscated) to reduce file size. If you would like to tweak the scripts to your liking, see the [LEXICON.md](https://github.com/ovnanova/smoloneko/blob/main/LEXICON.md) for help.
 
 ## 🏆 Contributing
 
