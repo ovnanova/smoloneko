@@ -2,13 +2,15 @@
 
 Want to add `oneko.js` to your site, but 5.41 KB is just too much? Now it's 1.65 KB!
 
-The default image is `oneko.gif` in the same directory as the script. This can be changed by modifying the `backgroundImage="url('oneko.gif')` variable in `oneko.js`.
+The default image is `oneko.gif` in the same directory as the `index.html`. This allows for a shorter directory reference in the script, which saves a few bytes. This can be changed by modifying the `backgroundImage="url('oneko.gif')` variable in `oneko.js`.
 
 **You should not do this unless your image is formatted as a sprite sheet with the individual frames mapped in the same positions as `oneko.gif`.** Improperly formatted images will **not** display correctly, as the script makes assumptions about the GIF grid.
 
 *Optional: smol oneko also supports mobile via a helper script (minified to 229 bytes)! Add both `oneko.js` and `oneko_touch.js` to your directory with the corresponding `<script>` tags in your HTML.*
 
 **Implementation:**
+
+All scripts for smol oneko are located in the `/scripts` directory, and `oneko.gif` is located in the top-level directory.
 
 ```html
 <script>src="oneko.js"></script>
